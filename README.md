@@ -58,6 +58,15 @@ To maintain maximum readability and visual appeal, all responses strictly confor
 
 ---
 
+## 📖 Wiki & Documentation
+
+For more in-depth setup guides, community modifications, and integration scripts:
+
+* **Official Wiki:** [RTX Core Framework Wiki](https://github.com/PsProsen-Dev/RTX-Core-Framework/wiki)
+* **Wiki Git Repository:** `https://github.com/PsProsen-Dev/RTX-Core-Framework.wiki.git`
+
+---
+
 ## 🤝 Contact & Open Source
 
 This project is officially open-source. Feel free to fork, contribute, or suggest enhancements.
