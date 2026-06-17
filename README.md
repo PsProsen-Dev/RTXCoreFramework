@@ -20,12 +20,16 @@ By establishing strict reasoning phases, dynamic Romanized communication blends,
 
 The core inspiration behind building the **RTX Core Framework** is to dismantle the entry barrier for programming and software development:
 
-* **Democratizing Tech:** Language should never be a blocker for aspiring developers. Anyone, from any part of the world, should be able to build outstanding software ("fod sake") by collaborating with AI in their own mother tongue.
+* **Democratizing Tech:** Language should never be a blocker for aspiring developers. Anyone, from any part of the world, should be able to build outstanding software and crush it (in Hindi slang: *fod sake*[^1]) by collaborating with AI in their own mother tongue.
 * **Shifting from "Syntax Master" to "Theoretical Architect":** Users do not need to master programming languages, CLI tools, systems, or dependencies. Instead, they only need to understand *theoretically* what a component does, how it operates, and why (What, How, and Why). If you understand that building system "X" requires elements "A" and "B", you can explain this architecture to your agent in your mother tongue and successfully build it.
 * **Beyond "Vibe Coding":** The industry refers to conversational programming as "vibe coding," but RTX goes far beyond that. It is an structured paradigm combining deep reasoning (R), active thinking (T), and autonomous execution (X) to build stable, clean, and production-ready code.
 * **The Ultimate Language-Agnostic Learning Engine:** The framework is not just for building; it's also for learning. Users can use RTX to learn *any* new skill, tech stack, or complex infrastructure dynamically in their mother tongue through natural conversation with the agent.
 * **Why the 70% Romanized + 30% English Blend?**
   Since most technical content, documentations, and code bases on the internet use English alphabets, the **70% Romanized [User's Mother Tongue] + 30% English** blend bridges the gap perfectly. The agent fetches English-based documentation, but explains and collaborates using the user's native tongue phonetics written in the Roman/English alphabet. This makes technical concepts extremely simple and natural to understand.
+
+[^1]: **A Note on Slang:** In Hindi, *fod sake* (फोड़ सके) translates to "crush it" or "excel." Interestingly, it is homophonic to the English idiom *for God's sake* (which literally translates to "भगवान के लिए", "खुदा के लिए", or "रहम करो"). RTX aims to empower you to do the former!
+
+---
 
 ### ⚔️ The RTX Counter-Perspective: Debunking the "English-Only" Future
 
