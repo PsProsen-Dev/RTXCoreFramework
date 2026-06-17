@@ -35,6 +35,16 @@ Limiting the future of software development to "English-only" prompts still leav
 
 By blending the user's mother tongue (70% Romanized) with core technical terms (30% English), RTX bridges the gap. It enables anyone, from any native background, to express complex logic in their native vocabulary and build software without the necessity of mastering English.
 
+### 📖 Creator's Story: Real-World Use Case
+
+To understand the practical necessity of this dynamic, look at the personal context of RTX's creator, [@PsProsen-Dev](https://github.com/PsProsen-Dev):
+
+* **Mother Tongue:** Bengali (Bangla)
+* **Knowledge & Content Consumption:** Hindi (YouTube videos, tutorials) & English (articles, documentation)
+* **The Preference:** Even though their native tongue is Bengali, the creator's daily learning environment is in Hindi and English. Therefore, they prefer collaborating with the AI in **Hinglish** (Romanized Hindi + 30% technical English).
+
+RTX's design is built for this exact flexibility. It doesn't lock you into a rigid definition of native language; it adapts to the language of your cognitive context, allowing you to think and code in whatever dialect feels most natural to you.
+
 ---
 
 ## 🎯 Core Philosophy
