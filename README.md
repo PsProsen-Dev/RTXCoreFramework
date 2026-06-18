@@ -107,25 +107,7 @@ To maintain maximum readability and visual appeal, all responses strictly confor
 **Step 1 — Download the framework file:**
 👉 [`RTX-Core-Framework.md`](https://raw.githubusercontent.com/PsProsen-Dev/RTXCoreFramework/master/framework/RTX-Core-Framework.md) — Right-click → Save As
 
-**Step 2 — Move the file to your User Home Directory:**
-
-After downloading, move the file to your Windows user home folder so every agent CLI and tool can find it easily:
-
-```
-C:\Users\YourUsername\RTX-Core-Framework.md
-```
-
-For example:
-```
-C:\Users\John\RTX-Core-Framework.md
-C:\Users\PsProsen-Dev\RTX-Core-Framework.md
-```
-
-> 💡 **Why the home directory?** Most Agentic CLIs and Code Editor / IDE tools automatically look for instruction files in your user home folder. Keeping the file here ensures every tool can locate and use it without any extra configuration.
-
----
-
-**Step 3 — Give the file to your agent using one of the methods below:**
+**Step 2 — Give the file to your agent using one of the methods below:**
 
 ---
 
@@ -151,12 +133,12 @@ Simply attach or share the **file itself** with your agent — no need to open i
 **3.** In the CLI's chat input, paste **only the file path** — nothing else:
 
 ```
-C:\Users\YourUsername\RTX-Core-Framework.md
+C:\Users\YourUsername\Downloads\RTX-Core-Framework.md
 ```
 
 For example:
 ```
-C:\Users\John\RTX-Core-Framework.md
+C:\Users\John\Downloads\RTX-Core-Framework.md
 ```
 
 **4.** Press Enter. The agent will read the file from the path and begin the First-Boot Protocol automatically.
