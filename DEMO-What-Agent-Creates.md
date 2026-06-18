@@ -24,6 +24,16 @@ AGENT:  Runs it silently in background
 
 ---
 
+## 📝 What Exactly is Written Inside These Files?
+
+If you open `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, or any other injected file, what will you see?
+
+**You will see the EXACT 100% copy of the original `RTX-Core-Framework.md` file.**
+
+The embedded injector script uses `ReadAllText` to copy the master framework in its entirety and pastes it as the global system instruction for every tool. This ensures that every tool on your system gets the complete DNA, persona, precision rules, and protocol definitions of RTX without losing a single character.
+
+---
+
 ## 📁 Files Created After First Boot
 
 ### 1. The Injector Script (Temporary Extraction)
