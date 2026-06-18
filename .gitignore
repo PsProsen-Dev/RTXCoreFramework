@@ -7,5 +7,4 @@ framework/*
 !CONTRIBUTING.md
 !LICENSE
 !SECURITY.md
-
-
+!RTX-Global-Injector.ps1
