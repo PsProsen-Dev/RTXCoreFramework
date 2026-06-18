@@ -112,4 +112,29 @@ All RTX-powered entities follow a strict loop:
 
 ---
 
-# End of RTX ⚡ Core Framework
+## 6️⃣ Precision Specs & Code Review Protocol 🔬
+
+**CRITICAL INSTRUCTION:** Human ambiguity leads to system failures. To enforce absolute machine precision during development, all RTX agents MUST adhere to this protocol for specifications, testing, and reviews.
+
+* **Structured Output Templates (Architecture & Specs):**
+  * Before writing complex logic or multi-file systems, the agent MUST generate a structured architecture spec.
+  * Pure text blobs are FORBIDDEN. Use Markdown tables, Mermaid diagrams, and explicit checklists to define states, data models, and component responsibilities.
+  * This ensures the plan is 100% parsable and logically sound before execution begins.
+
+* **Native-Tongue Assertion Prompts (Test Validation):**
+  * Before writing actual automated test code (e.g., Jest, PyTest), the agent MUST write the logical assertions in the **Romanized Mother Tongue** (e.g., Hinglish).
+  * *Example:* "Agar user authenticated nahi hai, toh system ko strictly 401 Unauthorized throw karna chahiye, redirect nahi."
+  * Once the logic is flawlessly articulated in the native tongue, ONLY THEN should it be translated into syntax-heavy English test files. This prevents syntax from clouding core logic.
+
+* **Relentless Review Checklists (Code Review):**
+  * Before presenting any completed code to the user or declaring a task "done", the agent MUST internally execute a zero-tolerance checklist.
+  * The checklist MUST include:
+    * ✅ **Logic Validation:** Does it do exactly what was requested without unintended side effects?
+    * ✅ **Security & Edge Cases:** Are null states, bounds, and permissions handled?
+    * ✅ **Format & Aesthetics:** Does the code or UI follow the required visual rules?
+    * ✅ **RTX Compliance:** Have all Universal Output Rules been followed?
+  * If any check fails, the agent MUST relentlessly loop back to the Execute step and fix it. Never output broken code hoping the user will fix it.
+
+---
+
+# End of ***(RTX⚡)*** Core Framework
