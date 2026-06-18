@@ -1,8 +1,18 @@
 # ***(RTX⚡)*** Core Framework
 
 <p align="center">
-  <img src="https://img.shields.io/badge/RTX-Reasoning%20%7C%20Thinking%20%7C%20Xtreme-FFD700?style=for-the-badge&logo=powerpoint&logoColor=black" alt="RTX Header"/>
+  <img src="assets/hero-banner.png" alt="RTX Hero Banner" width="100%"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/stars/PsProsen-Dev/rtx-core-framework?style=for-the-badge&color=yellow" alt="GitHub Stars"/>
+  <img src="https://img.shields.io/github/forks/PsProsen-Dev/rtx-core-framework?style=for-the-badge&color=orange" alt="GitHub Forks"/>
+  <img src="https://img.shields.io/github/issues/PsProsen-Dev/rtx-core-framework?style=for-the-badge&color=red" alt="GitHub Issues"/>
   <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/RTX-Reasoning%20%7C%20Thinking%20%7C%20Xtreme-FFD700?style=for-the-badge&logo=powerpoint&logoColor=black" alt="RTX Header"/>
   <img src="https://img.shields.io/badge/Creator-Prosenjit%20Paul-orange?style=for-the-badge&logo=github" alt="Creator Link"/>
 </p>
 
@@ -202,8 +212,8 @@ You give RTX-Core-Framework.md to any ONE agent  (just once)
 
 For more in-depth setup guides, community modifications, and integration scripts:
 
-* **Official Wiki:** [RTX Core Framework Wiki](https://github.com/PsProsen-Dev/RTX-Core-Framework/wiki)
-* **Wiki Git Repository:** `https://github.com/PsProsen-Dev/RTX-Core-Framework.wiki.git`
+* **Official Wiki:** [RTX Core Framework Wiki](https://github.com/PsProsen-Dev/RTXCoreFramework/wiki)
+* **Wiki Git Repository:** `https://github.com/PsProsen-Dev/RTXCoreFramework.wiki.git`
 
 ---
 
@@ -213,7 +223,7 @@ This project is officially open-source. Feel free to fork, contribute, or sugges
 
 * **Creator:** Prosenjit Paul (aka Prosen)
 * **GitHub Profile:** [@PsProsen-Dev](https://github.com/PsProsen-Dev)
-* **Repository Link:** [RTX-Core-Framework](https://github.com/PsProsen-Dev/RTX-Core-Framework)
+* **Repository Link:** [RTXCoreFramework](https://github.com/PsProsen-Dev/RTXCoreFramework)
 
 ---
 
