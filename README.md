@@ -96,17 +96,14 @@ To maintain maximum readability and visual appeal, all responses strictly confor
 
 Simply attach or share the **file itself** with your agent — no need to open it or type anything.
 
-| Tool | How to Give the File |
-|------|---------------------|
-| **Antigravity IDE** | Drag & drop the `.md` file into the chat, or attach via 📎 |
-| **ChatGPT** | Click the 📎 paperclip icon → Upload the file |
-| **Claude.ai / Claude Code CLI** | Click the 📎 icon → Upload the file |
-| **Gemini** | Click the 📎 attachment icon → Upload the file |
-| **OpenCode CLI** | Run: `Copy-Item "$env:USERPROFILE\RTX-Core-Framework.md" "$env:USERPROFILE\.config\opencode\AGENTS.md"` then launch `opencode` |
-| **Codex CLI** | Run: `Copy-Item "$env:USERPROFILE\RTX-Core-Framework.md" "$env:USERPROFILE\.codex\AGENTS.md"` then launch `codex` |
-| **Any other agent** | Attach, upload, or pass the file path — the file IS the prompt |
+| Tool Type | How to Give the File |
+|-----------|---------------------|
+| **Any AI Chat / IDE** | Drag & drop the `.md` file into the chat, or use the 📎 attach button |
+| **Agentic CLI** | Copy the file to the CLI's global instructions folder (e.g., `AGENTS.md`) then launch the CLI normally |
+| **Code Editor / IDE** | Place the file in your editor's global rules or instructions directory and restart |
 
 > **After attaching — send NO additional prompt.** The agent reads the file and begins the First-Boot Protocol on its own.
+
 
 ---
 
