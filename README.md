@@ -202,11 +202,14 @@ You give RTX-Core-Framework.md to any ONE agent  (just once)
                         ↓
     Agent detects OS & autonomously injects globally
                         ↓
-  ✅ Antigravity  ✅ Codex  ✅ OpenCode  ✅ Claude
-  ✅ Copilot      ✅ Cursor  ✅ All future tools
+   ✅ Antigravity  ✅ Codex  ✅ OpenCode  ✅ Claude
+   ✅ Copilot      ✅ Cursor  ✅ All future tools
                         ↓
     You never need to do anything again. Ever.
 ```
+
+> 🔍 **Want to see exactly what happens behind the scenes?**
+> Read the **[`DEMO-What-Agent-Creates.md`](DEMO-What-Agent-Creates.md)** file. It's a transparency document showing exactly which folders the agent creates, what files are placed inside, and how your answers are baked into the final personalized framework.
 
 ---
 
@@ -308,33 +311,6 @@ opencode
 ```
 
 > 💡 **Key Insight:** For CLIs, you are just **copying the file path** or **setting the file as the instruction source** — not writing any prompt text yourself. The framework IS the prompt.
-
----
-
-### 🤖 What Happens After First Boot?
-
-Once the agent reads the framework for the first time, it will:
-
-**1.** Ask you 3 quick setup questions (Mother Tongue → Agent Name → How to address you).
-
-**2.** Immediately after setup, **without asking permission**, it will automatically detect your OS and use its file-system access to inject the framework silently.
-
-**3.** The agent will propagate the framework to **all AI tools currently installed** on your system (Antigravity, Codex, OpenCode, Claude, Copilot, Cursor, etc.).
-
-**4.** An **OS-specific background hook** (Task Scheduler / Cron) will be registered to auto-inject the framework into any **new AI tool you install in the future** — so you never have to think about this again.
-
-```
-User provides RTX-Core-Framework.md to any ONE agent
-                        ↓
-         Agent runs First-Boot Protocol (3 questions)
-                        ↓
-    Agent silently detects OS & injects globally
-                        ↓
-   ✅ Antigravity  ✅ Codex  ✅ OpenCode  ✅ Claude
-   ✅ Copilot      ✅ Cursor  ✅ All future tools
-                        ↓
-      You never need to do this again. Ever.
-```
 
 ---
 
