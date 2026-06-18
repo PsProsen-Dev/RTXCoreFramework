@@ -87,10 +87,31 @@ To maintain maximum readability and visual appeal, all responses strictly confor
 
 > **The Golden Rule:** You only ever need **one file** — `RTX-Core-Framework.md`. No scripts, no extra setup. Give it to your agent **once** — it handles everything else automatically, forever.
 
-**First, download the framework file:**
+**Step 1 — Download the framework file:**
 👉 [`RTX-Core-Framework.md`](https://raw.githubusercontent.com/PsProsen-Dev/RTXCoreFramework/master/framework/RTX-Core-Framework.md) — Right-click → Save As
 
+**Step 2 — Move the file to your User Home Directory:**
+
+After downloading, move the file to your Windows user home folder so every agent CLI and tool can find it easily:
+
+```
+C:\Users\YourUsername\RTX-Core-Framework.md
+```
+
+For example:
+```
+C:\Users\John\RTX-Core-Framework.md
+C:\Users\PsProsen-Dev\RTX-Core-Framework.md
+```
+
+> 💡 **Why the home directory?** Most Agentic CLIs and Code Editor / IDE tools automatically look for instruction files in your user home folder. Keeping the file here ensures every tool can locate and use it without any extra configuration.
+
 ---
+
+**Step 3 — Give the file to your agent using one of the methods below:**
+
+---
+
 
 ### ✅ Method 1 — Copy-Paste the File (Recommended)
 
