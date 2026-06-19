@@ -5,6 +5,15 @@ All notable changes to the RTX-Core-Framework will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.1] - 2026-06-19
+### Added
+- **Global Examples:** Added three international compiled persona examples (Spanish-Dev-Carlos, Korean-Dev-Jiwoo, Arabic-Dev-Farhan) to support non-Indian developers.
+- **Context Size Warning:** Documented sliding context window limitations and drift recovery guidelines in the README.
+
+### Changed
+- **Propagation Hardening:** Redesigned Step 4 (Global Omnipresence Execution) to be fully opt-in. The agent now explicitly prompts for file-writing permissions rather than executing silently.
+- **Removed Persistent Hooks:** Completely eliminated background task scheduler/cron hooks to resolve endpoint security flags and potential malware-behavior alerts.
+
 ## [1.3.0] - 2026-06-19
 ### Added
 - **Security & Integrity Notice:** Added prompt injection warnings and input validation rules to the core framework to prevent malicious forks.

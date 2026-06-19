@@ -62,30 +62,28 @@ Agent automatically:
 
 **1.** **3 quick setup questions** poochega *(Maa-boli → Agent ka Naam → Aapko kaise address karein)*
 
-**2.** Apna OS detect karega (Windows, Mac, ya Linux) aur **bina permission maange** framework ko system mein inject kar dega
+**2.** Apna OS detect karega (Windows, Mac, ya Linux) aur **user se permission mangne ke baad** framework ko system mein inject kar dega
 
-**3.** **(RTX⚡)** framework ko system ke **sabhi installed AI tools** mein propagate karega
-
-**4.** Ek **Background OS Hook** register karega — taaki future mein install hone wala koi bhi naya AI tool automatically RTX framework pa sake
+**3.** **(RTX⚡)** framework ko system ke **sabhi installed AI tools** mein propagate karega (agar user ne allow kiya)
 
 ```
 RTXCoreFramework.md kisi BHI EK agent ko do  (sirf ek baar)
                         ↓
          Agent 3 setup questions poochega
                         ↓
-    Agent OS detect karega & globally inject karega
+    Agent permission lekar master config compile karega
                         ↓
    ✅ Antigravity  ✅ Codex  ✅ OpenCode  ✅ Claude
-   ✅ Copilot      ✅ Cursor  ✅ Sabhi future tools
+   ✅ Copilot      ✅ Cursor  ✅ Sabhi confirmed tools
                         ↓
-    Dobara kuch karne ki zarurat nahi. Kabhi nahi.
+    Dobara kuch karne ki zarurat nahi (jab tak context reset na ho).
 ```
 
 ---
 
 ## 🔬 Precision Protocol — Specs, Tests & Code Review
 
-RTX v1.1.0 mein machine-level precision enforce karne ke liye teen mandatory rules hain:
+RTX v1.3.0 mein machine-level precision enforce karne ke liye teen mandatory rules hain:
 
 | Protocol | Kya Enforce Karta Hai |
 |----------|-----------------------|

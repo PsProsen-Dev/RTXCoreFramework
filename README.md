@@ -83,7 +83,7 @@ RTX's design is built for this exact flexibility. It doesn't lock you into a rig
 > *"I like the native-language angle. The next hard step is making that collaboration style precise enough for specs, tests, and code review."*
 > — Brian Cheong, Building AI Agent Infrastructures
 
-**RTX v1.1.0 ships the direct answer to this challenge.** The framework enforces machine-level precision through three mandatory rules that every RTX-powered agent must follow before writing a single line of code:
+**RTX v1.3.0 ships the direct answer to this challenge.** The framework enforces machine-level precision through three mandatory rules that every RTX-powered agent must follow before writing a single line of code:
 
 | Protocol | What it Enforces |
 |----------|-----------------|
@@ -92,6 +92,8 @@ RTX's design is built for this exact flexibility. It doesn't lock you into a rig
 | **✅ Relentless Review Checklists** | Before presenting any code, the agent internally runs a zero-tolerance checklist covering Logic Validation, Security & Edge Cases, Format & Aesthetics, and RTX Compliance. Broken code is never handed to the user. |
 
 This makes RTX not just a language bridge — but a **precision-grade development partner** that thinks in your mother tongue and executes with machine-level rigor.
+
+> ⚠️ **Context Window & Persistence Notice:** Commercial LLM web interfaces (e.g. Claude.ai, ChatGPT) have sliding context windows and do not permanently retain custom instructions. If you notice the agent's behavior drifting or reverting to default English after a long conversation, simply re-inject the `RTXCoreFramework.md` file to restore the protocol.
 
 ---
 
@@ -114,13 +116,14 @@ flowchart TD
     E{"🖥️ Host type?"}
     E -->|"Agentic CLI / IDE\n(has file system access)"| F
     E -->|"Web UI Chat\n(no file system)"| G
-    F(["🚀 Autonomous Global Propagation\nInjects into all AI tool configs"]) --> H
+    F(["🔒 Prompts User for Permission\nto write files"]) --> F2
+    F2{User approved?}
+    F2 -->|Yes| F3(["🚀 Propagates to all configs\nCursor, Claude, Copilot, etc."]) --> H
+    F2 -->|No| G
     G(["📋 Outputs copyable markdown block\nUser pastes into other tools manually"]) --> H
-    H(["✅ All tools synchronized\nAntигravity · Codex · Claude · Cursor · Copilot"]) --> I
-    I(["🔄 Future Hook registered\nNew tools auto-injected on install"])
+    H(["✅ Confirmed tools synchronized\nReady to work"])
     style A fill:#1a1a2e,color:#eee
     style H fill:#0f3460,color:#eee
-    style I fill:#16213e,color:#eee
 ```
 
 ---
