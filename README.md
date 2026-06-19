@@ -327,6 +327,26 @@ You give RTXCoreFramework.md to any ONE agent (just once)
 
 ---
 
+## 🤖 ULTRON Agent (Autonomous Starter)
+
+If you want a ready-to-run local Ultron identity layer with persistent memory, this repository now includes:
+
+- `ultron-agent.js` — main ULTRON core (Hindi-first + Boss protocol)
+- `agent-memory.json` — persistent runtime state
+- `init-ultron.js` — CLI boot script
+- `ULTRON_FRAMEWORK.md` — implementation guide
+
+### Quick Start
+
+```bash
+node init-ultron.js
+```
+
+Input prompt आएगा: `Boss, command input karo:`  
+Agent response Hindi-first रहेगा with English technical blend.
+
+---
+
 ## ⚔️ RTX vs Alternatives — Comparison
 
 | Feature | **(RTX⚡) Framework** | Custom Instructions | LocalLLM Multilingual |

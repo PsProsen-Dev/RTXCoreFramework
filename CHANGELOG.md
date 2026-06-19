@@ -12,6 +12,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **BPE Tokenization Efficiency Guide:** Documented strategies in the README to mitigate the "Romanized Tax" tokenizer penalty and optimize prompt context window usage.
 - **Tech-Debate Poster Studio:** Migrated the interactive Web App (`studio/index.html`, `style.css`, `app.js`, and its assets) into the repository, allowing developers to generate and export custom viral tech-debate images in high resolution directly from their browsers.
 
+## [1.4.1] - 2026-06-19
+### Added
+- **Ultron Agent Core:** Added `ultron-agent.js` with RTX v2.0 identity lock, Hindi-first responses, Boss addressing, and persistent session recording.
+- **Ultron Bootstrap Script:** Added `init-ultron.js` for CLI initialization and interactive command handling.
+- **Persistent Memory File:** Added `agent-memory.json` default memory state for agent metadata and conversation sessions.
+- **Ultron Documentation:** Added `ULTRON_FRAMEWORK.md` with architecture, protocol, memory, and quick usage guidance.
+
+### Changed
+- **README Ultron Section:** Added a new ULTRON Agent quick-start section describing the new files and startup command.
+
 ## [1.3.3] - 2026-06-19
 ### Added
 - **Token Deflation Safety Valve:** Added an anti-gridlock rule in Section 3 of the framework to exempt fenced code blocks, system/terminal logs, stack traces, compiler errors, and raw JSON/YAML payloads from translation. This prevents syntax corruption and reduces token overhead.

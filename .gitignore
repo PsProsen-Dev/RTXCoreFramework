@@ -10,6 +10,10 @@ framework/*
 !SECURITY.md
 !DEMO-What-Agent-Creates.md
 !CHANGELOG.md
+!ULTRON_FRAMEWORK.md
+!ultron-agent.js
+!init-ultron.js
+!agent-memory.json
 !examples/
 examples/*
 !examples/*.md
