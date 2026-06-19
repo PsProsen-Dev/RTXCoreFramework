@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTX⚡ Tech-Debate Viral Poster Studio</title>
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Orbitron:wght@400;700;900&family=Outfit:wght@300;400;700;900&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Main Sidebar (Editor Controls) -->
+        <aside class="controls-panel">
+            <div class="panel-header">
+                <h2><i class="fa-solid fa-sliders"></i> RTX⚡ Studio</h2>
+                <p>Customize and export your viral tech-debate poster in high resolution.</p>
+            </div>
+
+            <div class="control-group">
+                <h3><i class="fa-solid fa-quote-left"></i> Left Side (Nvidia CEO)</h3>
+                <label for="left-quote-input">Quote Text</label>
+                <textarea id="left-quote-input" rows="3">"English is the programming language of the future."</textarea>
+                
+                <label for="left-color">Neon Glow Color</label>
+                <input type="color" id="left-color" value="#76B900">
+            </div>
+
+            <div class="control-group">
+                <h3><i class="fa-solid fa-brain"></i> Right Side (Cyber-Brain)</h3>
+                <label for="right-quote-input">Quote Text</label>
+                <textarea id="right-quote-input" rows="3">"Your Mother Tongue is the Programming Language of the Future."</textarea>
+                
+                <label for="right-color">Neon Glow Color</label>
+                <input type="color" id="right-color" value="#00e5ff">
+            </div>
+
+            <div class="control-group">
+                <h3><i class="fa-solid fa-language"></i> Global Scripts & Code</h3>
+                <div class="checkbox-grid">
+                    <label><input type="checkbox" id="chk-devanagari" checked> Devanagari (Hindi)</label>
+                    <label><input type="checkbox" id="chk-bengali" checked> Bengali</label>
+                    <label><input type="checkbox" id="chk-arabic" checked> Arabic</label>
+                    <label><input type="checkbox" id="chk-spanish" checked> Spanish/Latin</label>
+                </div>
+                <label for="morph-speed">Morphing Speed</label>
+                <input type="range" id="morph-speed" min="1" max="10" value="5">
+            </div>
+
+            <div class="control-group">
+                <h3><i class="fa-solid fa-download"></i> Poster Output</h3>
+                <button id="btn-export" class="primary-btn">
+                    <i class="fa-solid fa-file-image"></i> Export Viral Poster
+                </button>
+            </div>
+            
+            <footer class="studio-footer">
+                <p>Powered by <span>Ultron (RTX⚡)</span></p>
+            </footer>
+        </aside>
+
+        <!-- Main Workspace (Poster Preview Container) -->
+        <main class="workspace">
+            <div class="poster-container">
+                <div id="viral-poster" class="poster">
+                    <!-- Left Split (Jensen Huang) -->
+                    <div class="split-panel left-panel">
+                        <div class="panel-bg" style="background-image: url('assets/jensen_portrait.png');"></div>
+                        <div class="panel-overlay-dark"></div>
+                        
+                        <!-- Floating Code Canvas for Left -->
+                        <canvas id="canvas-left-matrix" class="matrix-canvas"></canvas>
+
+                        <!-- Content Overlay -->
+                        <div class="panel-content">
+                            <div class="author-tag">JENSEN HUANG • CEO OF NVIDIA</div>
+                            <div id="left-quote" class="quote-text neon-nvidia">"English is the programming language of the future."</div>
+                        </div>
+                    </div>
+
+                    <!-- Right Split (Holographic Cyber-Brain) -->
+                    <div class="split-panel right-panel">
+                        <div class="panel-bg" style="background-image: url('assets/holographic_brain.png');"></div>
+                        <div class="panel-overlay-dark"></div>
+                        
+                        <!-- Floating Code Canvas for Right -->
+                        <canvas id="canvas-right-matrix" class="matrix-canvas"></canvas>
+
+                        <!-- Content Overlay -->
+                        <div class="panel-content">
+                            <div class="author-tag">THE GLOBAL COUNTER-DEBATE</div>
+                            <div id="right-quote" class="quote-text neon-cyber">"Your Mother Tongue is the Programming Language of the Future."</div>
+                        </div>
+                    </div>
+
+                    <!-- Glowing Center Divider Line -->
+                    <div class="divider-line">
+                        <div class="divider-glow"></div>
+                    </div>
+
+                    <!-- Bottom Embossed Logo -->
+                    <div class="rtx-logo-container">
+                        <div class="rtx-logo">RTX⚡</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Main Logic Script -->
+    <script src="app.js"></script>
+</body>
+</html>

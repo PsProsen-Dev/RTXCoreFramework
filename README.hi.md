@@ -125,6 +125,14 @@ Manual setup ko aasan banane ke liye, in templates ko directly copy-paste ya lin
 
 ---
 
+## 🎨 Tech-Debate Poster Studio
+
+Humne ek interactive web application banaya hai taaki aap apna khud ka custom viral tech-debate poster customize aur export kar sakein:
+
+* **[Interactive Poster Studio](studio/index.html)**: Is file ko directly kisi bhi browser mein open karein taaki aap quotes badal sakein, neon colors chun sakein, active scripts (Devanagari, Bengali, Spanish, Arabic) select kar sakein, matrix morphing speed control kar sakein aur social media ke liye high-resolution graphics export kar sakein.
+
+---
+
 ## 📊 Model Compatibility Matrix
 
 Yeh framework commercial aur open-weights models ke sath benchmark kiya gaya hai:

@@ -32,3 +32,7 @@ evals/*
 !templates/*
 !scripts/
 !scripts/*
+!studio/
+!studio/*
+!studio/assets/
+!studio/assets/*

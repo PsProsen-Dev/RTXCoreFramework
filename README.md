@@ -109,6 +109,14 @@ For easier manual setup, copy-paste or link these configuration templates direct
 
 ---
 
+## 🎨 Tech-Debate Poster Studio
+
+We have created an interactive web app so you can customize and export your own viral tech-debate posters:
+
+* **[Interactive Poster Studio](studio/index.html)**: Open this file directly in any browser to adjust quotes, choose neon colors, select active scripts (Devanagari, Bengali, Spanish, Arabic), control matrix morphing speeds, and export high-resolution graphics for social media.
+
+---
+
 ## 📊 Model Compatibility Matrix
 
 The framework has been benchmarked across various commercial and open-weights models:
