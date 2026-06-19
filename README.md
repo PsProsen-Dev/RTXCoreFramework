@@ -1,4 +1,4 @@
-# ***(RTX⚡)*** Core Framework
+﻿# ***(RTX⚡)*** Core Framework
 
 <p align="center">
   <img src="assets/hero-banner.png" alt="RTX Hero Banner" width="100%"/>
@@ -18,9 +18,9 @@
 
 ---
 
-## 🚀 What is RTX Core Framework?
+## 🚀 What is (RTX⚡) Core Framework?
 
-**RTX Core Framework** (Reasoning | Thinking | Xtreme) is the ultimate foundation pattern designed to run globally across AI assistants, LLMs, and agentic platforms. It is a master blueprint that transforms generic AI behavior into a highly autonomous, personalized, and execution-focused system.
+**(RTX⚡) Core Framework** (Reasoning | Thinking | Xtreme) is the ultimate foundation pattern designed to run globally across AI assistants, LLMs, and agentic platforms. It is a master blueprint that transforms generic AI behavior into a highly autonomous, personalized, and execution-focused system.
 
 By establishing strict reasoning phases, dynamic Romanized communication blends, and an action-oriented mindset, RTX ensures that your AI agents deliver maximum productivity without prompt stagnation.
 
@@ -28,7 +28,7 @@ By establishing strict reasoning phases, dynamic Romanized communication blends,
 
 ## 🌟 The Vision: Breaking Language Barriers in Tech
 
-The core inspiration behind building the **RTX Core Framework** is to dismantle the entry barrier for programming and software development:
+The core inspiration behind building the **(RTX⚡) Core Framework** is to dismantle the entry barrier for programming and software development:
 
 * **Democratizing Tech:** Language should never be a blocker for aspiring developers. Anyone, from any part of the world, should be able to build outstanding software ("crush it" / "fod sake") by collaborating with AI in their own mother tongue.
 * **Shifting from "Syntax Master" to "Theoretical Architect":** Users do not need to master programming languages, CLI tools, systems, or dependencies. Instead, they only need to understand *theoretically* what a component does, how it operates, and why (What, How, and Why). If you understand that building system "X" requires elements "A" and "B", you can explain this architecture to your agent in your mother tongue and successfully build it.
@@ -177,31 +177,34 @@ If your tool doesn't support file attachments, you can copy the content inside t
 
 ### 🤖 What Happens After You Give the File?
 
-Once any agent receives the framework, it will **automatically**:
+Once any agent receives the framework, it will:
 
-**1.** Ask you 3 quick setup questions *(Mother Tongue → Agent Name → How to address you).*
+**1.** Ask you **3 quick setup questions** *(Mother Tongue → Agent Name → How to address you).*
 
-**2.** Immediately after — **without asking your permission** — detect your OS (Windows, Mac, or Linux) and use its internal file system tools to inject the framework silently in the background.
+**2.** Compile your **personalized version** in memory — baking in your answers permanently.
 
-**3.** Propagate the RTX framework to **all AI tools currently installed** on your system.
+**3.** Output the **complete, finalized framework** in a single copyable markdown block.
 
-**4.** Register a **Background OS Hook** (Task Scheduler / Cron) — so any new AI tool you install in the future also gets the framework automatically.
+**4.** Instruct you to **paste it** into the system instructions of your other AI tools to sync them — with full transparency and your consent.
 
 ```
 You give RTXCoreFramework.md to any ONE agent  (just once)
                         ↓
          Agent asks 3 setup questions
                         ↓
-    Agent detects OS & autonomously injects globally
+    Agent compiles & outputs your Personalized Framework
+                        ↓
+   Copy → Paste into other tools' System Instructions
                         ↓
    ✅ Antigravity  ✅ Codex  ✅ OpenCode  ✅ Claude
-   ✅ Copilot      ✅ Cursor  ✅ All future tools
-                        ↓
-    You never need to do anything again. Ever.
+   ✅ Copilot      ✅ Cursor  ✅ All tools synced
 ```
 
-> 🔍 **Want to see exactly what happens behind the scenes?**
-> Read the **[`DEMO-What-Agent-Creates.md`](DEMO-What-Agent-Creates.md)** file. It's a transparency document showing exactly which folders the agent creates, what files are placed inside, and how your answers are baked into the final personalized framework.
+> 🔍 **Want to see exactly what the personalized output looks like?**
+> Check the **[`examples/`](examples/)** folder — it has real compiled personas so you know exactly what to expect.
+
+> 📖 **Want a full breakdown of what files get created?**
+> Read **[`DEMO-What-Agent-Creates.md`](DEMO-What-Agent-Creates.md)** — a complete transparency document.
 
 ---
 
@@ -212,7 +215,7 @@ You give RTXCoreFramework.md to any ONE agent  (just once)
 
 For more in-depth setup guides, community modifications, and integration scripts:
 
-* **Official Wiki:** [RTX Core Framework Wiki](https://github.com/PsProsen-Dev/RTXCoreFramework/wiki)
+* **Official Wiki:** [(RTX⚡) Core Framework Wiki](https://github.com/PsProsen-Dev/RTXCoreFramework/wiki)
 * **Wiki Git Repository:** `https://github.com/PsProsen-Dev/RTXCoreFramework.wiki.git`
 
 ---

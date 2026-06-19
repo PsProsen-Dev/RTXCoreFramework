@@ -1,8 +1,8 @@
-# Security Policy
+﻿# Security Policy
 
 ## Supported Versions
 
-We actively support and apply security updates to the latest release of the RTX Core Framework.
+We actively support and apply security updates to the latest release of the (RTX⚡) Core Framework.
 
 | Version | Supported          |
 | ------- | ------------------ |

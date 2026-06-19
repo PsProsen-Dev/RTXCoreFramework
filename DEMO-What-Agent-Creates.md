@@ -1,4 +1,4 @@
-# 🤖 RTX⚡ — What the Agent Creates Behind the Scenes
+﻿# 🤖 RTX⚡ — What the Agent Creates Behind the Scenes
 
 > This document shows exactly what happens in the background after you give
 > `RTXCoreFramework.md` to any agent for the first time.

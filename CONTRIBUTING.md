@@ -1,6 +1,6 @@
-# Contributing to RTX Core Framework
+﻿# Contributing to (RTX⚡) Core Framework
 
-First off, thank you for considering contributing to the RTX Core Framework! ⚡
+First off, thank you for considering contributing to the (RTX⚡) Core Framework! ⚡
 
 It is people like you who make RTX a robust and versatile blueprint for AI agents everywhere.
 
