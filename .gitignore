@@ -28,4 +28,5 @@ evals/*
 !CODE_OF_CONDUCT.md
 !.github/workflows/
 !.github/workflows/*.yml
-
+!templates/
+!templates/*

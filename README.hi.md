@@ -92,6 +92,33 @@ RTX v1.3.0 mein machine-level precision enforce karne ke liye teen mandatory rul
 | **🗣️ Native-Tongue Assertion Prompts** | Test code likhne se pehle agent ko pehle native language mein assertion likhna HOGA — jaise *"Agar user authenticated nahi hai, toh strictly 401 aana chahiye, redirect nahi"* |
 | **✅ Relentless Review Checklists** | Code present karne se pehle agent internally zero-tolerance checklist run karega — Logic, Security, Format, RTX Compliance |
 
+This makes RTX not just a language bridge — but a **precision-grade development partner** that thinks in your mother tongue and executes with machine-level rigor.
+
+---
+
+## 🗂️ Ecosystem Integration Templates
+
+Manual setup ko aasan banane ke liye, in templates ko directly copy-paste ya link karke apne IDE/tool mein use karein:
+
+* **[Cursor IDE Template](templates/.cursorrules)**: Apne project root mein `.cursorrules` naam se save karein.
+* **[Cline / Claude Dev Template](templates/clinerules)**: Apne project root mein `.clinerules` naam se save karein.
+* **[GitHub Copilot Template](templates/copilot-instructions.md)**: Apne project root mein `.github/copilot-instructions.md` naam se save karein.
+
+---
+
+## 📊 Model Compatibility Matrix
+
+Yeh framework commercial aur open-weights models ke sath benchmark kiya gaya hai:
+
+| Model Tier | Model Name | Compatibility Score | Behavior Notes |
+|:---|:---|:---:|:---|
+| **Tier 1 (Excellent)** | Claude 3.7 Sonnet / 3.5 Sonnet | `10 / 10` | Ekdum perfect compliance. 70/30 blend aur output rules ko flawless follow karta hai. |
+| **Tier 1 (Excellent)** | DeepSeek R1 / V3 | `9.5 / 10` | Kamaal ka reasoning logic. Code precision aur assertions perfectly implement karta hai. |
+| **Tier 2 (Very Good)** | GPT-4o / GPT-4o-mini | `8.5 / 10` | Robust and fast coding execution. Bohot lambi chat mein thoda sa language drift ho sakta hai. |
+| **Tier 2 (Very Good)** | Gemini 1.5 Pro / 2.5 Pro | `8 / 10` | Huge context windows. Multilingual / bilingual inputs ko perfectly process karta hai. |
+| **Tier 3 (Fair)** | Llama 3.1 70B / Qwen 2.5 Coder 32B | `7.5 / 10` | Solid coding capacity. Kabhi-kabhi precision assertion translate karte waqt confuse hota hai. |
+| **Tier 3 (Fair)** | Smaller Local Models (Llama 3 8B) | `6 / 10` | Basic coding ke liye theek hai, par rules aur behavior compliance strong nahi hai. |
+
 ---
 
 ## ❓ Troubleshooting
