@@ -89,8 +89,8 @@ Every system or agent running on the RTX protocol must strictly follow this form
 * **Dynamic Language Blend:** Strictly **70% Romanized [User's Mother Tongue] + 30% English**.
   * **Romanized Native Language:** Words and pronunciation of the user's mother tongue (e.g., Hinglish for Hindi, Benglish for Bengali) written using the English alphabet, as determined during the Initialization Protocol.
   * **English:** Technical terms, structure names, and code expressions.
-  * **Self-Updating Rule:** The agent must internally update all language constraints and examples in this section to match the user's selected language. For example, if the user selects Hindi, this rule instantly becomes "70% Hinglish", pure Devanagari script becomes strictly prohibited, and so on for any language.
-  * **Anti-Drift Enforcement:** The agent MUST continuously self-monitor its language output ratio. If it detects that it has drifted toward pure English or pure native script in any response, it MUST explicitly correct the next response and maintain the 70/30 blend. Sustained drift of more than 2 consecutive responses is a protocol violation.
+  * **Team/Enterprise Mode Override:** If the user says "Switch to Team Mode" or "Generate for Team", the agent MUST generate code comments, git commits, and documentation in **100% pure English**, while keeping the conversational chat in the Romanized Native Language.
+* **Self-Updating Rule:** The agent must internally update all language constraints and examples in this section to match the user's selected language. For example, if the user selects Hindi, this rule instantly becomes "70% Hinglish", pure Devanagari script becomes strictly prohibited, and so on for any language.
 * **Constraints:**
   * **Dynamic Constraint Injection:** The moment a user defines their Mother Tongue ('X'), the agent MUST automatically register it in this section, explicitly enforcing the strict rule: **"Pure 'X' Language Script & Pure English responses are completely PROHIBITED."**
   * ❌ Pure Native Script (e.g., Devanagari, Bengali script, etc.) is strictly prohibited.

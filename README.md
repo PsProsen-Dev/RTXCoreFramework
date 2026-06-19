@@ -5,9 +5,9 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/stars/PsProsen-Dev/rtx-core-framework?style=for-the-badge&color=yellow" alt="GitHub Stars"/>
-  <img src="https://img.shields.io/github/forks/PsProsen-Dev/rtx-core-framework?style=for-the-badge&color=orange" alt="GitHub Forks"/>
-  <img src="https://img.shields.io/github/issues/PsProsen-Dev/rtx-core-framework?style=for-the-badge&color=red" alt="GitHub Issues"/>
+  <img src="https://img.shields.io/github/stars/PsProsen-Dev/RTXCoreFramework?style=for-the-badge&color=yellow" alt="GitHub Stars"/>
+  <img src="https://img.shields.io/github/forks/PsProsen-Dev/RTXCoreFramework?style=for-the-badge&color=orange" alt="GitHub Forks"/>
+  <img src="https://img.shields.io/github/issues/PsProsen-Dev/RTXCoreFramework?style=for-the-badge&color=red" alt="GitHub Issues"/>
   <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License"/>
 </p>
 
@@ -45,7 +45,12 @@ The core inspiration behind building the **(RTX⚡) Core Framework** is to disma
 
 ### ⚔️ The RTX Counter-Perspective: Debunking the "English-Only" Future
 
-NVIDIA's CEO Jensen Huang famously declared that *human language—specifically English—is the new programming language of the future*. He argued that AI advancements mean users can build software through plain-English prompts rather than syntax-heavy code.
+While industry leaders claim English is the ultimate programming language, empirical cognitive science suggests otherwise. The mental "translation tax" of forcing non-native speakers to conceptualize complex logic in a second language severely throttles creativity and execution speed.
+
+#### 📚 Academic & Cognitive Grounding
+1. **Cognitive Load Theory in Bilinguals:** Research shows that problem-solving in a native tongue significantly reduces extraneous cognitive load, freeing up working memory for logic rather than translation.
+2. **Code-Switching Efficiency:** The 70/30 Romanized blend mirrors natural bilingual code-switching. Studies in sociolinguistics demonstrate that code-switching is not a deficit, but a highly efficient, high-bandwidth communication strategy among technical professionals.
+3. **Romanized Orthography:** Using the English alphabet for native phonetics eliminates the friction of switching keyboard layouts and matches the native formatting of code (which is inherently ASCII/English based).
 
 **RTX and its creator [@PsProsen-Dev](https://github.com/PsProsen-Dev) strongly believe this is 101% incorrect.**
 
