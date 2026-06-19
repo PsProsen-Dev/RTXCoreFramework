@@ -18,6 +18,10 @@
 
 ---
 
+<p align="center">
+  <a href="README.hi.md"><img src="https://img.shields.io/badge/README-हिन्दी-orange?style=for-the-badge" alt="Hindi README"/></a>
+</p>
+
 ## 🚀 What is (RTX⚡) Core Framework?
 
 **(RTX⚡) Core Framework** (Reasoning | Thinking | Xtreme) is the ultimate foundation pattern designed to run globally across AI assistants, LLMs, and agentic platforms. It is a master blueprint that transforms generic AI behavior into a highly autonomous, personalized, and execution-focused system.
@@ -91,6 +95,26 @@ When an RTX-compliant agent boots up for the first time, it executes a sequentia
 1. **Mother Tongue Identification:** Dynamically configures the language mix to 70% Romanized mother tongue + 30% English (e.g., Hinglish, Benglish) to ensure comfortable, high-fidelity collaboration.
 2. **Agent Naming & Persona Injection:** Accepts custom names (e.g., *Jarvis*, *Friday*, *Chanakya*), fetches context from the web to absorb the persona's traits, and auto-generates dynamic 3-letter abbreviations.
 3. **User Addressal:** Configures how the agent should address you (e.g., *Boss*, *Bro*, *Sir*).
+
+### 🗺️ How It Works — Architecture Flow
+
+```mermaid
+flowchart TD
+    A(["👤 User downloads RTXCoreFramework.md"]) --> B
+    B(["🤖 Give file to ANY one agent\n(Antigravity, Claude, Codex, Cursor...)"]) --> C
+    C(["❓ Agent asks 3 setup questions\nMother Tongue → Name → Addressal"]) --> D
+    D(["⚙️ Agent compiles personalized\nframework in memory"]) --> E
+    E{"🖥️ Host type?"}
+    E -->|"Agentic CLI / IDE\n(has file system access)"| F
+    E -->|"Web UI Chat\n(no file system)"| G
+    F(["🚀 Autonomous Global Propagation\nInjects into all AI tool configs"]) --> H
+    G(["📋 Outputs copyable markdown block\nUser pastes into other tools manually"]) --> H
+    H(["✅ All tools synchronized\nAntигravity · Codex · Claude · Cursor · Copilot"]) --> I
+    I(["🔄 Future Hook registered\nNew tools auto-injected on install"])
+    style A fill:#1a1a2e,color:#eee
+    style H fill:#0f3460,color:#eee
+    style I fill:#16213e,color:#eee
+```
 
 ---
 
@@ -208,9 +232,96 @@ You give RTXCoreFramework.md to any ONE agent  (just once)
 
 ---
 
+## ⚔️ RTX vs Alternatives — Comparison
 
+| Feature | **(RTX⚡) Framework** | Custom Instructions | LocalLLM Multilingual |
+|---|---|---|---|
+| Native Language Support | ✅ 70% Romanized blend | ❌ 100% English only | ✅ 100% Native script |
+| Works with any LLM | ✅ Universal | ✅ Per-tool | ⚠️ Depends on model |
+| Cross-Platform Sync | ✅ Auto-propagates | ❌ Manual per-tool | ❌ Local only |
+| Persona Injection | ✅ Dynamic web fetch | ❌ Static | ❌ Not supported |
+| Precision Protocol (Specs/Tests) | ✅ Built-in | ❌ Manual | ❌ Not supported |
+| One-time Setup | ✅ Give once, works everywhere | ❌ Repeat per tool | ⚠️ Per model setup |
+| Open Source | ✅ MIT License | ❌ Closed | ✅ Varies |
+| Internet Required | ⚠️ For persona (fallback exists) | ❌ No | ❌ No |
 
+---
 
+## ❓ Troubleshooting & FAQ
+
+<details>
+<summary><strong>🔴 The agent is responding in pure English — ignoring the language blend</strong></summary>
+
+This is the most common issue. Fix it by:
+1. Ensure the framework was given to the agent BEFORE starting the conversation, not mid-chat.
+2. Start a **brand new chat/session** after giving the framework.
+3. If using Custom Instructions, paste the full framework content and save → restart the app.
+4. If drift persists after 2 responses, type: `"RTX Anti-Drift — restore 70/30 blend immediately."`
+
+</details>
+
+<details>
+<summary><strong>🔴 Cursor / Codex is ignoring the framework rules</strong></summary>
+
+For Cursor: Place `RTXCoreFramework.md` in `~/.cursor/rules/` and restart Cursor.
+For Codex: Place in `~/.codex/AGENTS.md` — Codex reads this automatically.
+For any tool: Give the file path directly in chat on first launch.
+
+</details>
+
+<details>
+<summary><strong>🟡 The 3-question setup didn't trigger — agent just started normally</strong></summary>
+
+Some tools (like Claude web) don't allow raw file uploads as system prompts. Use **Method 2** — copy the file content and paste it into your tool's Custom Instructions / System Prompt settings. Then start a new chat.
+
+</details>
+
+<details>
+<summary><strong>🟡 Auto-propagation failed — tools aren't synced</strong></summary>
+
+Auto-propagation only works in **Agentic CLIs and IDEs with shell access** (e.g., Antigravity IDE, Codex CLI). Web UIs (Claude, ChatGPT web) cannot write to your file system by design. In that case, manually copy the personalized output and paste it into each tool's system instructions.
+
+</details>
+
+<details>
+<summary><strong>🟢 How do I update to a newer version of the framework?</strong></summary>
+
+1. Download the latest `RTXCoreFramework.md` from the repo.
+2. Give it to any one of your already-configured agents.
+3. The agent will detect it's a newer version and re-run propagation automatically.
+
+</details>
+
+<details>
+<summary><strong>🟢 How do I uninstall / remove the framework?</strong></summary>
+
+The framework creates/overwrites these files on your system. Delete them to fully uninstall:
+
+**Windows:**
+```
+%USERPROFILE%\RTXCoreFramework.md
+%USERPROFILE%\.gemini\GEMINI.md
+%USERPROFILE%\.codex\AGENTS.md
+%USERPROFILE%\CLAUDE.md
+%USERPROFILE%\AGENTS.md
+%USERPROFILE%\.cursor\rules\RTXCoreFramework.mdc
+%APPDATA%\Code\User\copilot-instructions.md
+```
+**Mac/Linux:**
+```
+~/RTXCoreFramework.md
+~/.gemini/GEMINI.md
+~/.codex/AGENTS.md
+~/CLAUDE.md
+~/AGENTS.md
+~/.cursor/rules/RTXCoreFramework.mdc
+~/.config/opencode/system-prompt.md
+```
+Also remove any Task Scheduler (Windows) or cron (Mac/Linux) entries named `RTXFrameworkHook`.
+
+</details>
+
+---
 
 ## 📖 Wiki & Documentation
 

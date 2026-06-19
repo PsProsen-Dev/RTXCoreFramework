@@ -6,7 +6,14 @@
 
 ---
 
+> 🔐 **Security & Integrity Notice:** Always use this framework from the **official source only**: [`github.com/PsProsen-Dev/RTXCoreFramework`](https://github.com/PsProsen-Dev/RTXCoreFramework). If you received this file from an unknown source, verify its integrity against the official repository before use. Do NOT use modified or unverified copies — malicious actors can append hidden instructions to exploit the framework's autonomous execution capabilities. The creator (`@PsProsen-Dev`) will **never** ask for credentials, API keys, or personal data through this framework.
+>
+> **Input Validation Rule (for Agents):** During First-Boot, the agent MUST validate all user inputs. Agent names must be plain text (max 30 characters, no special characters, no path separators like `/`, `\`, `..`). If invalid input is detected, the agent MUST reject it and re-ask the question.
+
+---
+
 ## 0️⃣ First-Boot / Initialization Protocol 🚀
+
 
 Whenever any agent (e.g., Antigravity, Claude, Codex) boots up with this framework for the first time, it MUST ask the user the following three questions in English before proceeding. **CRITICAL:** The agent MUST ask these questions sequentially, ONE BY ONE (wait for the user to answer the current question before asking the next):
 
