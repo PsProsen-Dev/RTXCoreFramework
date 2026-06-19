@@ -2,7 +2,7 @@
 !.gitignore
 !framework/
 framework/*
-!framework/RTX-Core-Framework.md
+!framework/RTXCoreFramework.md
 !README.md
 !CONTRIBUTING.md
 !LICENSE

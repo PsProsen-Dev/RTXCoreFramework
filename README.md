@@ -112,10 +112,10 @@ To maintain maximum readability and visual appeal, all responses strictly confor
 
 ## ⚙️ How to Use — Zero Prompt Required
 
-> **The Golden Rule:** You only ever need **one file** — `RTX-Core-Framework.md`. No scripts, no extra setup. Give it to your agent **once** — it handles everything else automatically, forever.
+> **The Golden Rule:** You only ever need **one file** — `RTXCoreFramework.md`. No scripts, no extra setup. Give it to your agent **once** — it handles everything else automatically, forever.
 
 **Step 1 — Download the framework file:**
-👉 [`RTX-Core-Framework.md`](https://raw.githubusercontent.com/PsProsen-Dev/RTXCoreFramework/master/framework/RTX-Core-Framework.md) — Right-click → Save As
+👉 [`RTXCoreFramework.md`](https://raw.githubusercontent.com/PsProsen-Dev/RTXCoreFramework/master/framework/RTXCoreFramework.md) — Right-click → Save As
 
 **Step 2 — Give the file to your agent using one of the methods below:**
 
@@ -143,12 +143,12 @@ Simply attach or share the **file itself** with your agent — no need to open i
 **3.** In the CLI's chat input, paste **only the file path** — nothing else:
 
 ```
-C:\Users\YourUsername\Downloads\RTX-Core-Framework.md
+C:\Users\YourUsername\Downloads\RTXCoreFramework.md
 ```
 
 For example:
 ```
-C:\Users\John\Downloads\RTX-Core-Framework.md
+C:\Users\John\Downloads\RTXCoreFramework.md
 ```
 
 **4.** Press Enter. The agent will read the file from the path and begin the First-Boot Protocol automatically.
@@ -163,7 +163,7 @@ C:\Users\John\Downloads\RTX-Core-Framework.md
 
 If your tool doesn't support file attachments, you can copy the content inside the file.
 
-**1.** Open the downloaded `RTX-Core-Framework.md` file in any text editor.
+**1.** Open the downloaded `RTXCoreFramework.md` file in any text editor.
 
 **2.** Select all → `Ctrl+A`, then Copy → `Ctrl+C`.
 
@@ -188,7 +188,7 @@ Once any agent receives the framework, it will **automatically**:
 **4.** Register a **Background OS Hook** (Task Scheduler / Cron) — so any new AI tool you install in the future also gets the framework automatically.
 
 ```
-You give RTX-Core-Framework.md to any ONE agent  (just once)
+You give RTXCoreFramework.md to any ONE agent  (just once)
                         ↓
          Agent asks 3 setup questions
                         ↓

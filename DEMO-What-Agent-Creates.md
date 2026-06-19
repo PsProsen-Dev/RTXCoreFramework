@@ -1,7 +1,7 @@
 # 🤖 RTX⚡ — What the Agent Creates Behind the Scenes
 
 > This document shows exactly what happens in the background after you give
-> `RTX-Core-Framework.md` to any agent for the first time.
+> `RTXCoreFramework.md` to any agent for the first time.
 > You do nothing. The agent handles all of this silently and automatically.
 
 ---
@@ -9,7 +9,7 @@
 ## 📋 The Trigger Chain
 
 ```
-YOU:    Give RTX-Core-Framework.md to any agent
+YOU:    Give RTXCoreFramework.md to any agent
                           ↓
 AGENT:  Reads the framework → asks 3 setup questions
                           ↓
@@ -26,7 +26,7 @@ AGENT:  Detects OS & uses file-system access to inject globally
 
 If you open `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, or any other injected file, what will you see?
 
-**You will see a FINAL, PERSONALIZED version of the `RTX-Core-Framework.md` file.**
+**You will see a FINAL, PERSONALIZED version of the `RTXCoreFramework.md` file.**
 
 Instead of blindly copying the raw file, the agent **bakes your setup answers directly into the text** before injecting it. 
 
@@ -40,7 +40,7 @@ For example, if you chose "Hinglish" as your mother tongue and "Ultron" as the n
 ```
 C:\Users\YourUsername\
 └── .gemini\
-    └── GEMINI.md                    ← RTX-Core-Framework.md content injected here.
+    └── GEMINI.md                    ← RTXCoreFramework.md content injected here.
                                         Every new Antigravity/Gemini CLI session
                                         reads this file globally on startup.
 ```
@@ -51,7 +51,7 @@ C:\Users\YourUsername\
 ```
 C:\Users\YourUsername\
 └── .codex\
-    └── AGENTS.md                    ← RTX-Core-Framework.md content injected here.
+    └── AGENTS.md                    ← RTXCoreFramework.md content injected here.
                                         Codex CLI reads AGENTS.md automatically
                                         on every session launch.
 ```
@@ -63,10 +63,10 @@ C:\Users\YourUsername\
 C:\Users\YourUsername\
 └── .config\
     └── opencode\
-        ├── opencode.jsonc           ← Patched to point to RTX-Core-Framework.md:
-        │                               { "instructions": ["~/.config/opencode/RTX-Core-Framework.md"] }
-        ├── RTX-Core-Framework.md   ← Full framework file copied here for OpenCode to load.
-        └── AGENTS.md               ← RTX-Core-Framework.md content injected here
+        ├── opencode.jsonc           ← Patched to point to RTXCoreFramework.md:
+        │                               { "instructions": ["~/.config/opencode/RTXCoreFramework.md"] }
+        ├── RTXCoreFramework.md   ← Full framework file copied here for OpenCode to load.
+        └── AGENTS.md               ← RTXCoreFramework.md content injected here
                                         for OpenCode CLI mode.
 ```
 
@@ -75,7 +75,7 @@ C:\Users\YourUsername\
 ### 4. Claude Desktop & Claude Code CLI
 ```
 C:\Users\YourUsername\
-└── CLAUDE.md                        ← RTX-Core-Framework.md content injected here.
+└── CLAUDE.md                        ← RTXCoreFramework.md content injected here.
                                         Claude Code CLI and Claude Desktop both
                                         automatically read CLAUDE.md from the home
                                         directory as the global system instruction.
@@ -87,7 +87,7 @@ C:\Users\YourUsername\
 ```
 C:\Users\YourUsername\
 └── .copilot\
-    └── instructions.md              ← RTX-Core-Framework.md content injected here.
+    └── instructions.md              ← RTXCoreFramework.md content injected here.
                                         Copilot reads this as global instructions
                                         across all workspaces.
 ```
@@ -99,7 +99,7 @@ C:\Users\YourUsername\
 C:\Users\YourUsername\
 └── .cursor\
     └── rules\
-        └── RTX-Core-Framework.mdc  ← RTX-Core-Framework.md content injected here.
+        └── RTXCoreFramework.mdc  ← RTXCoreFramework.md content injected here.
                                         Cursor reads .mdc rule files from this
                                         directory globally across all projects.
 ```
@@ -109,7 +109,7 @@ C:\Users\YourUsername\
 ### 7. Universal Fallback (Home Directory)
 ```
 C:\Users\YourUsername\
-└── AGENTS.md                        ← RTX-Core-Framework.md content injected here.
+└── AGENTS.md                        ← RTXCoreFramework.md content injected here.
                                         Any new Agentic CLI or tool that follows
                                         the AGENTS.md convention will pick this up
                                         automatically — covers unknown future tools.
@@ -135,7 +135,7 @@ System Task Scheduler / Cron
 ```
 C:\Users\YourUsername\
 │
-├── RTX-Core-Framework.md            ← Your one source file (you placed this here)
+├── RTXCoreFramework.md            ← Your one source file (you placed this here)
 ├── AGENTS.md                        ← Universal fallback for any CLI tool
 ├── CLAUDE.md                        ← Global instruction for Claude
 │
@@ -148,12 +148,12 @@ C:\Users\YourUsername\
 ├── .config\
 │   └── opencode\
 │       ├── opencode.jsonc           ← Points to RTX framework
-│       ├── RTX-Core-Framework.md   ← Framework copy for OpenCode
+│       ├── RTXCoreFramework.md   ← Framework copy for OpenCode
 │       └── AGENTS.md               ← OpenCode CLI instruction
 │
 └── .cursor\
     └── rules\
-        └── RTX-Core-Framework.mdc  ← Cursor AI global rules
+        └── RTXCoreFramework.mdc  ← Cursor AI global rules
 
 OS Hook Scheduler:
 └── RTX-Global-Omnipresence-Hook     ← Runs periodically for future tools
@@ -168,10 +168,10 @@ OS Hook Scheduler:
 | `~/.gemini/GEMINI.md` | Antigravity / Gemini CLI | ✅ Auto-created |
 | `~/.codex/AGENTS.md` | Codex CLI | ✅ Auto-created |
 | `~/.config/opencode/opencode.jsonc` | OpenCode config | ✅ Auto-patched |
-| `~/.config/opencode/RTX-Core-Framework.md` | OpenCode framework copy | ✅ Auto-created |
+| `~/.config/opencode/RTXCoreFramework.md` | OpenCode framework copy | ✅ Auto-created |
 | `~/CLAUDE.md` | Claude Desktop & Claude Code CLI | ✅ Auto-created |
 | `~/.copilot/instructions.md` | GitHub Copilot | ✅ Auto-created |
-| `~/.cursor/rules/RTX-Core-Framework.mdc` | Cursor AI | ✅ Auto-created |
+| `~/.cursor/rules/RTXCoreFramework.mdc` | Cursor AI | ✅ Auto-created |
 | `~/AGENTS.md` | Universal fallback | ✅ Auto-created |
 | OS Hook (Task Scheduler/Cron) | Future tools auto-injection | ✅ Registered |
 
