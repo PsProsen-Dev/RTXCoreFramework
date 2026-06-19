@@ -25,4 +25,7 @@ assets/*
 !evals/
 evals/*
 !evals/*.md
+!CODE_OF_CONDUCT.md
+!.github/workflows/
+!.github/workflows/*.yml
 

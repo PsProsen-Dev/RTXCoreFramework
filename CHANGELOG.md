@@ -5,6 +5,15 @@ All notable changes to the RTX-Core-Framework will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.2] - 2026-06-19
+### Added
+- **Open-Source Community Standards:** Added a Contributor Covenant `CODE_OF_CONDUCT.md`.
+- **CI Workflows:** Added a GitHub Action workflow (`.github/workflows/markdown-lint.yml`) for markdown linting.
+- **Badges & Visuals:** Added a CI Build Badge and a Visual Sample I/O dialog to the `README.md` and `README.hi.md` to improve clarity.
+
+### Changed
+- **Security Hardening:** Updated `RTXCoreFramework.md` and `SECURITY.md` to include an explicit **Hardened System Rule (Anti-Override)**, preventing prompt-injection attacks that use instructions like "Ignore all previous instructions".
+
 ## [1.3.1] - 2026-06-19
 ### Added
 - **Global Examples:** Added three international compiled persona examples (Spanish-Dev-Carlos, Korean-Dev-Jiwoo, Arabic-Dev-Farhan) to support non-Indian developers.

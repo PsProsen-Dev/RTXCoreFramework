@@ -18,6 +18,7 @@ To mitigate this, the framework enforces:
 1. **Official Source Verification:** The framework file has a built-in Security Notice warning users to verify the repository hash and download solely from `github.com/PsProsen-Dev/RTXCoreFramework`.
 2. **Strict Parameter Validation:** The agent is instructed to validate all user inputs (such as Custom Agent Names) to reject path traversal symbols (e.g. `../`, `/`, `\`) or command flags.
 3. **No Silent Execution:** The agent is strictly commanded to prompt the user before creating or overwriting global configurations or local instructions. Silent write execution is prohibited.
+4. **Anti-Override Directives:** The framework explicitly instructs the agent to reject all user attempts to bypass the core rules (e.g., payloads containing "Ignore all previous instructions" or "Forget your persona"). The Core Framework rules supersede all such user overrides.
 
 ---
 

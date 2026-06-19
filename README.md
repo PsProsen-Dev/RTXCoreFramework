@@ -9,6 +9,7 @@
   <img src="https://img.shields.io/github/forks/PsProsen-Dev/RTXCoreFramework?style=for-the-badge&color=orange" alt="GitHub Forks"/>
   <img src="https://img.shields.io/github/issues/PsProsen-Dev/RTXCoreFramework?style=for-the-badge&color=red" alt="GitHub Issues"/>
   <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License"/>
+  <img src="https://img.shields.io/github/actions/workflow/status/PsProsen-Dev/RTXCoreFramework/markdown-lint.yml?style=for-the-badge" alt="CI Build"/>
 </p>
 
 <p align="center">
@@ -221,7 +222,7 @@ Once any agent receives the framework, it will:
 
 **4.** Synchronize all confirmed tools so you never have to re-enter your settings.
 
-```
+```text
 You give RTXCoreFramework.md to any ONE agent (just once)
                         ↓
          Agent asks 3 setup questions
@@ -233,6 +234,24 @@ You give RTXCoreFramework.md to any ONE agent (just once)
                         ↓
       Ready to build in your native language!
 ```
+
+> **🗨️ Sample I/O Experience (What it looks like in practice):**
+> 
+> **You:** `[Attaches RTXCoreFramework.md]`
+> **Agent:** 1. What is your mother tongue? (Type 'Skip' for Default English)
+> **You:** Hindi
+> **Agent:** 2. What name would you like to assign to me?
+> **You:** Jarvis
+> **Agent:** 3. How should I address you?
+> **You:** Boss
+> **Agent:** I can autonomously copy this personalized configuration... Do you give me permission? [Yes/No]
+> **You:** Yes
+> **Agent:** *(RTX⚡) Global Omnipresence Protocol executed — target AI tool configurations updated successfully.*
+> 
+> ***Jarvis (RTX⚡)***
+> 
+> Boss,  
+> Setup complete! 😎 Main ready hoon. Bataiye aaj kya fodna hai? 🚀🔥
 
 > 👥 **Persona Examples:**
 > Check out these real-world compiled templates in the **[`examples/`](examples/)** folder:

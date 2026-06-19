@@ -6,6 +6,7 @@
 
 <p align="center">
   <a href="README.md"><img src="https://img.shields.io/badge/README-English-blue?style=for-the-badge" alt="English README"/></a>
+  <img src="https://img.shields.io/github/actions/workflow/status/PsProsen-Dev/RTXCoreFramework/markdown-lint.yml?style=for-the-badge" alt="CI Build"/>
 </p>
 
 ---
