@@ -137,8 +137,17 @@ function setupMatrixStream(canvas, isLeft) {
     let columns = Math.floor(canvas.width / fontSize) + 1;
     let drops = Array(columns).fill(1).map(() => Math.random() * -100);
 
+    let lastDrawTime = 0;
+
     // Stream elements: each drops holds characters that can morph
-    function draw() {
+    function draw(timestamp) {
+        // Throttle to ~30 FPS (33ms)
+        if (timestamp - lastDrawTime < 33) {
+            requestAnimationFrame(draw);
+            return;
+        }
+        lastDrawTime = timestamp;
+
         // Subtle transparent black fade to create trailing effect
         ctx.fillStyle = 'rgba(0, 0, 0, 0.08)';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -153,6 +162,15 @@ function setupMatrixStream(canvas, isLeft) {
         
         ctx.font = `${fontSize}px 'Fira Code', monospace`;
 
+        // ⚡ Bolt Performance Optimization:
+        // Hoist active pool creation outside the loop.
+        // Prevents array recreation and object property lookups for every column (~100+ times per frame).
+        let activePools = [];
+        if (state.scripts.devanagari) activePools.push(charSets.devanagari);
+        if (state.scripts.bengali) activePools.push(charSets.bengali);
+        if (state.scripts.arabic) activePools.push(charSets.arabic);
+        if (state.scripts.spanish) activePools.push(charSets.spanish);
+
         for (let i = 0; i < drops.length; i++) {
             // Determine active character pool based on checkboxes and morphing state
             let char = '';
@@ -163,13 +181,6 @@ function setupMatrixStream(canvas, isLeft) {
                 const snippet = codeSnippets[Math.floor(Math.random() * codeSnippets.length)];
                 char = snippet.charAt(Math.floor(Math.random() * snippet.length));
             } else {
-                // Get active character sets
-                let activePools = [];
-                if (state.scripts.devanagari) activePools.push(charSets.devanagari);
-                if (state.scripts.bengali) activePools.push(charSets.bengali);
-                if (state.scripts.arabic) activePools.push(charSets.arabic);
-                if (state.scripts.spanish) activePools.push(charSets.spanish);
-                
                 if (activePools.length > 0) {
                     const selectedPool = activePools[Math.floor(Math.random() * activePools.length)];
                     char = selectedPool.charAt(Math.floor(Math.random() * selectedPool.length));
@@ -190,9 +201,14 @@ function setupMatrixStream(canvas, isLeft) {
             }
             drops[i] += (state.morphSpeed / 5);
         }
+
+        // ⚡ Bolt Performance Optimization:
+        // Use requestAnimationFrame instead of setInterval to sync with display refresh rate
+        // and pause animation when tab is inactive to save battery/CPU.
+        requestAnimationFrame(draw);
     }
 
-    setInterval(draw, 33);
+    requestAnimationFrame(draw);
 }
 
 // Helper to convert hex colors to rgba with custom opacity
