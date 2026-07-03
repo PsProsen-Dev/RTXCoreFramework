@@ -40,3 +40,4 @@ evals/*
 !studio/*
 !studio/assets/
 !studio/assets/*
+!.markdownlint.json
