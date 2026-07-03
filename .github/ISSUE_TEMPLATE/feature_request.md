@@ -22,6 +22,7 @@ assignees: PsProsen-Dev
 <!-- Iska real example do — kaise use hoga yeh feature? -->
 
 ## 📊 Priority (in your opinion)
+
 - [ ] 🔴 Critical — Framework ke bina kaam nahi chal raha
 - [ ] 🟠 High — Bahut important, jaldi chahiye
 - [ ] 🟡 Medium — Nice to have

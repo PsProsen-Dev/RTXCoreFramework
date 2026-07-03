@@ -10,9 +10,10 @@ assignees: PsProsen-Dev
 <!-- Kya problem aa rahi hai? Short aur clear likho. -->
 
 ## 🔁 Steps to Reproduce
-1. 
-2. 
-3. 
+
+1.
+2.
+3.
 
 ## ✅ Expected Behavior
 <!-- Kya hona chahiye tha? -->
@@ -21,6 +22,7 @@ assignees: PsProsen-Dev
 <!-- Kya ho raha hai actually? -->
 
 ## 🌍 Environment
+
 - **AI Tool:** (e.g., Antigravity IDE, Codex CLI, Claude, Cursor)
 - **OS:** (e.g., Windows 11, macOS 14, Ubuntu 22.04)
 - **Framework Version:** (e.g., v1.2.0)

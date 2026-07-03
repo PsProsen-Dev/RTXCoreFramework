@@ -1,10 +1,12 @@
-## 📋 Pull Request Summary
+# 📋 Pull Request Summary
 <!-- 1-2 lines mein batao — kya change kiya? -->
 
 ## 🔗 Related Issue
+
 Closes #<!-- Issue number -->
 
 ## 🎯 Type of Change
+
 - [ ] 🐛 Bug fix
 - [ ] 💡 New feature / enhancement
 - [ ] 📝 Documentation update
@@ -13,6 +15,7 @@ Closes #<!-- Issue number -->
 - [ ] 📁 New example persona
 
 ## ✅ Checklist — RTX Compliance
+
 - [ ] Framework file (`RTXCoreFramework.md`) mein koi bhi change puri tarah English mein hai
 - [ ] Koi bhi new example proper compiled persona format follow karta hai (Sections 1–6 only)
 - [ ] Documentation updated (README, CHANGELOG, etc.)
