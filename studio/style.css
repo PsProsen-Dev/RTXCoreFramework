@@ -444,3 +444,9 @@ body {
     0% { background-position: -200% 0; }
     100% { background-position: 200% 0; }
 }
+
+/* Accessibility focus styles */
+:focus-visible {
+    outline: 2px solid #00e5ff;
+    outline-offset: 2px;
+}

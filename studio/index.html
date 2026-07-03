@@ -18,12 +18,12 @@
         <!-- Main Sidebar (Editor Controls) -->
         <aside class="controls-panel">
             <div class="panel-header">
-                <h2><i class="fa-solid fa-sliders"></i> RTX⚡ Studio</h2>
+                <h2><i class="fa-solid fa-sliders" aria-hidden="true"></i> RTX⚡ Studio</h2>
                 <p>Customize and export your viral tech-debate poster in high resolution.</p>
             </div>
 
             <div class="control-group">
-                <h3><i class="fa-solid fa-quote-left"></i> Left Side (Nvidia CEO)</h3>
+                <h3><i class="fa-solid fa-quote-left" aria-hidden="true"></i> Left Side (Nvidia CEO)</h3>
                 <label for="left-quote-input">Quote Text</label>
                 <textarea id="left-quote-input" rows="3">"English is the programming language of the future."</textarea>
                 
@@ -32,7 +32,7 @@
             </div>
 
             <div class="control-group">
-                <h3><i class="fa-solid fa-brain"></i> Right Side (Cyber-Brain)</h3>
+                <h3><i class="fa-solid fa-brain" aria-hidden="true"></i> Right Side (Cyber-Brain)</h3>
                 <label for="right-quote-input">Quote Text</label>
                 <textarea id="right-quote-input" rows="3">"Your Mother Tongue is the Programming Language of the Future."</textarea>
                 
@@ -41,7 +41,7 @@
             </div>
 
             <div class="control-group">
-                <h3><i class="fa-solid fa-language"></i> Global Scripts & Code</h3>
+                <h3><i class="fa-solid fa-language" aria-hidden="true"></i> Global Scripts & Code</h3>
                 <div class="checkbox-grid">
                     <label><input type="checkbox" id="chk-devanagari" checked> Devanagari (Hindi)</label>
                     <label><input type="checkbox" id="chk-bengali" checked> Bengali</label>
@@ -53,9 +53,9 @@
             </div>
 
             <div class="control-group">
-                <h3><i class="fa-solid fa-download"></i> Poster Output</h3>
+                <h3><i class="fa-solid fa-download" aria-hidden="true"></i> Poster Output</h3>
                 <button id="btn-export" class="primary-btn">
-                    <i class="fa-solid fa-file-image"></i> Export Viral Poster
+                    <i class="fa-solid fa-file-image" aria-hidden="true"></i> Export Viral Poster
                 </button>
             </div>
             
@@ -67,7 +67,7 @@
         <!-- Main Workspace (Poster Preview Container) -->
         <main class="workspace">
             <div class="poster-container">
-                <div id="viral-poster" class="poster">
+                <div id="viral-poster" class="poster" role="img" aria-label="Viral Tech-Debate Poster Preview">
                     <!-- Left Split (Jensen Huang) -->
                     <div class="split-panel left-panel">
                         <div class="panel-bg" style="background-image: url('assets/jensen_portrait.png');"></div>
