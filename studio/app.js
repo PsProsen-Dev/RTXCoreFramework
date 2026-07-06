@@ -213,7 +213,7 @@ function hexToRgba(hex, opacity) {
 function exportViralPoster() {
     const exportBtn = document.getElementById('btn-export');
     exportBtn.disabled = true;
-    exportBtn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Compiling Poster...';
+    exportBtn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin" aria-hidden="true"></i> Compiling Poster...';
 
     // 8K / High Resolution (3840 x 3840 pixels)
     const exportWidth = 3840;
@@ -409,7 +409,7 @@ function exportViralPoster() {
 
         // Reset button
         exportBtn.disabled = false;
-        exportBtn.innerHTML = '<i class="fa-solid fa-file-image"></i> Export Viral Poster';
+        exportBtn.innerHTML = '<i class="fa-solid fa-file-image" aria-hidden="true"></i> Export Viral Poster';
     }
 }
 
