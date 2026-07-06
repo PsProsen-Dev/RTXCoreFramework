@@ -1,3 +1,11 @@
+
+function getSecureRandom() {
+    if (typeof crypto !== 'undefined' && crypto.getRandomValues) {
+        return crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296;
+    }
+    return getSecureRandom();
+}
+
 // State configuration
 const state = {
     leftQuote: `"English is the programming language of the future."`,
@@ -135,7 +143,7 @@ function setupMatrixStream(canvas, isLeft) {
 
     const fontSize = 14;
     let columns = Math.floor(canvas.width / fontSize) + 1;
-    let drops = Array(columns).fill(1).map(() => Math.random() * -100);
+    let drops = Array(columns).fill(1).map(() => getSecureRandom() * -100);
 
     // Stream elements: each drops holds characters that can morph
     function draw() {
@@ -148,7 +156,7 @@ function setupMatrixStream(canvas, isLeft) {
             ctx.fillStyle = hexToRgba(state.leftColor, 0.45);
         } else {
             // Alternating gold and cyan for right cyber brain
-            ctx.fillStyle = Math.random() > 0.5 ? '#ffd700' : state.rightColor;
+            ctx.fillStyle = getSecureRandom() > 0.5 ? '#ffd700' : state.rightColor;
         }
         
         ctx.font = `${fontSize}px 'Fira Code', monospace`;
@@ -158,10 +166,10 @@ function setupMatrixStream(canvas, isLeft) {
             let char = '';
             
             // Randomly morph between code snippets and global characters
-            if (Math.random() < 0.25) {
+            if (getSecureRandom() < 0.25) {
                 // Snippet morph
-                const snippet = codeSnippets[Math.floor(Math.random() * codeSnippets.length)];
-                char = snippet.charAt(Math.floor(Math.random() * snippet.length));
+                const snippet = codeSnippets[Math.floor(getSecureRandom() * codeSnippets.length)];
+                char = snippet.charAt(Math.floor(getSecureRandom() * snippet.length));
             } else {
                 // Get active character sets
                 let activePools = [];
@@ -171,10 +179,10 @@ function setupMatrixStream(canvas, isLeft) {
                 if (state.scripts.spanish) activePools.push(charSets.spanish);
                 
                 if (activePools.length > 0) {
-                    const selectedPool = activePools[Math.floor(Math.random() * activePools.length)];
-                    char = selectedPool.charAt(Math.floor(Math.random() * selectedPool.length));
+                    const selectedPool = activePools[Math.floor(getSecureRandom() * activePools.length)];
+                    char = selectedPool.charAt(Math.floor(getSecureRandom() * selectedPool.length));
                 } else {
-                    char = String.fromCharCode(33 + Math.random() * 93);
+                    char = String.fromCharCode(33 + getSecureRandom() * 93);
                 }
             }
 
@@ -185,7 +193,7 @@ function setupMatrixStream(canvas, isLeft) {
             ctx.fillText(char, x, y);
 
             // Move stream down according to morph speed state
-            if (y > canvas.height && Math.random() > 0.975) {
+            if (y > canvas.height && getSecureRandom() > 0.975) {
                 drops[i] = 0;
             }
             drops[i] += (state.morphSpeed / 5);
@@ -442,9 +450,11 @@ function roundRect(ctx, x, y, width, height, radius) {
     if (typeof radius === 'number') {
         radius = {tl: radius, tr: radius, br: radius, bl: radius};
     } else {
-        var defaultRadius = {tl: 0, tr: 0, br: 0, bl: 0};
-        for (var side in defaultRadius) {
+        const defaultRadius = {tl: 0, tr: 0, br: 0, bl: 0};
+        for (const side in defaultRadius) {
+            if (Object.prototype.hasOwnProperty.call(defaultRadius, side)) {
             radius[side] = radius[side] || defaultRadius[side];
+            }
         }
     }
     ctx.beginPath();
@@ -489,21 +499,21 @@ function drawStaticCodeMatrix(ctx, width, height) {
     // Draw columns of characters
     for (let x = 0; x < width; x += fontSize * 1.5) {
         for (let y = 0; y < height; y += fontSize * 1.5) {
-            if (Math.random() > 0.88) { // Sparse distribution for high-res look
+            if (getSecureRandom() > 0.88) { // Sparse distribution for high-res look
                 const isLeft = x < (width / 2);
                 
                 // Color configuration
                 if (isLeft) {
                     ctx.fillStyle = hexToRgba(state.leftColor, 0.15);
                 } else {
-                    ctx.fillStyle = Math.random() > 0.5 ? 'rgba(255, 215, 0, 0.18)' : hexToRgba(state.rightColor, 0.18);
+                    ctx.fillStyle = getSecureRandom() > 0.5 ? 'rgba(255, 215, 0, 0.18)' : hexToRgba(state.rightColor, 0.18);
                 }
                 
                 // Generate random glyph
                 let char = '';
-                if (Math.random() < 0.2) {
-                    const snippet = codeSnippets[Math.floor(Math.random() * codeSnippets.length)];
-                    char = snippet.charAt(Math.floor(Math.random() * snippet.length));
+                if (getSecureRandom() < 0.2) {
+                    const snippet = codeSnippets[Math.floor(getSecureRandom() * codeSnippets.length)];
+                    char = snippet.charAt(Math.floor(getSecureRandom() * snippet.length));
                 } else {
                     let pools = [];
                     if (state.scripts.devanagari) pools.push(charSets.devanagari);
@@ -512,8 +522,8 @@ function drawStaticCodeMatrix(ctx, width, height) {
                     if (state.scripts.spanish) pools.push(charSets.spanish);
                     
                     if (pools.length > 0) {
-                        const pool = pools[Math.floor(Math.random() * pools.length)];
-                        char = pool.charAt(Math.floor(Math.random() * pool.length));
+                        const pool = pools[Math.floor(getSecureRandom() * pools.length)];
+                        char = pool.charAt(Math.floor(getSecureRandom() * pool.length));
                     } else {
                         char = '$';
                     }
