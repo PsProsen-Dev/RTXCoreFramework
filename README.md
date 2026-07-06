@@ -55,7 +55,7 @@ While industry leaders claim English is the ultimate programming language, empir
 
 **RTX and its creator [@PsProsen-Dev](https://github.com/PsProsen-Dev) strongly believe this is 101% incorrect.**
 
-Limiting the future of software development to "English-only" prompts still leaves millions of brilliant, creative minds behind due to language barriers. English is NOT the only programming language of the future. The true programming language of the future is **your own mother tongue**. 
+Limiting the future of software development to "English-only" prompts still leaves millions of brilliant, creative minds behind due to language barriers. English is NOT the only programming language of the future. The true programming language of the future is **your own mother tongue**.
 
 By blending the user's mother tongue (70% Romanized) with core technical terms (30% English), RTX bridges the gap. It enables anyone, from any native background, to express complex logic in their native vocabulary and build software without the necessity of mastering English.
 
@@ -293,7 +293,7 @@ You give RTXCoreFramework.md to any ONE agent (just once)
 ```
 
 > **🗨️ Sample I/O Experience (What it looks like in practice):**
-> 
+>
 > **You:** `[Attaches RTXCoreFramework.md]`
 > **Agent:** 1. What is your mother tongue? (Type 'Skip' for Default English)
 > **You:** Hindi
@@ -304,10 +304,10 @@ You give RTXCoreFramework.md to any ONE agent (just once)
 > **Agent:** I can autonomously copy this personalized configuration... Do you give me permission? [Yes/No]
 > **You:** Yes
 > **Agent:** *(RTX⚡) Global Omnipresence Protocol executed — target AI tool configurations updated successfully.*
-> 
+>
 > ***Jarvis (RTX⚡)***
-> 
-> Boss,  
+>
+> Boss,
 > Setup complete! 😎 Main ready hoon. Bataiye aaj kya fodna hai? 🚀🔥
 
 > 👥 **Persona Examples:**
@@ -342,7 +342,7 @@ If you want a ready-to-run local Ultron identity layer with persistent memory, t
 node init-ultron.js
 ```
 
-Input prompt आएगा: `Boss, command input karo:`  
+Input prompt आएगा: `Boss, command input karo:`
 Agent response Hindi-first रहेगा with English technical blend.
 
 ---

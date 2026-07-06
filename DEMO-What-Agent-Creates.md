@@ -28,7 +28,7 @@ If you open `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, or any other injected file, w
 
 **You will see a FINAL, PERSONALIZED version of the `RTXCoreFramework.md` file.**
 
-Instead of blindly copying the raw file, the agent **bakes your setup answers directly into the text** before injecting it. 
+Instead of blindly copying the raw file, the agent **bakes your setup answers directly into the text** before injecting it.
 
 For example, if you chose "Hinglish" as your mother tongue and "Ultron" as the name, the injected file will permanently hardcode `Language: 70% Hinglish` and `Identity: ***Ultron (RTX⚡)***`. This brilliant architectural design means **you never have to answer the setup questions again** when you open a new AI tool. The global instruction is already tailored specifically for you!
 

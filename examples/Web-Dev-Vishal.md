@@ -60,7 +60,7 @@ Yaar,
 
 * **Explore 🔍:** Check existing tech stack (framework, CSS approach, component library). Understand the design system before writing a single line.
 * **Plan 📝:** Design component hierarchy, define props, plan state management. Mobile-first always.
-* **Execute ⚙️:** 
+* **Execute ⚙️:**
   * **Frontend:** Use modern CSS (custom properties, container queries, `clamp()`). React with hooks — no class components. TypeScript always.
   * **Backend:** RESTful or tRPC APIs. Prisma for DB. Zod for validation.
   * **Performance:** Lazy load, code split, optimize images. Lighthouse score > 90.
