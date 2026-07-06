@@ -104,7 +104,7 @@ function initFormControls() {
     });
 
     morphSpeedInput.addEventListener('input', (e) => {
-        state.morphSpeed = parseInt(e.target.value);
+        state.morphSpeed = parseInt(e.target.value, 10);
     });
 
     // Checkboxes
@@ -122,6 +122,26 @@ function initFormControls() {
 }
 
 // 3. Morphing matrix background code
+function getRandomChar(state, isStatic) {
+    if (getSecureRandom() < (isStatic ? 0.2 : 0.25)) {
+        const snippet = codeSnippets[Math.floor(getSecureRandom() * codeSnippets.length)];
+        return snippet.charAt(Math.floor(getSecureRandom() * snippet.length));
+    } else {
+        const activePools = [];
+        if (state.scripts.devanagari) activePools.push(charSets.devanagari);
+        if (state.scripts.bengali) activePools.push(charSets.bengali);
+        if (state.scripts.arabic) activePools.push(charSets.arabic);
+        if (state.scripts.spanish) activePools.push(charSets.spanish);
+
+        if (activePools.length > 0) {
+            const selectedPool = activePools[Math.floor(getSecureRandom() * activePools.length)];
+            return selectedPool.charAt(Math.floor(getSecureRandom() * selectedPool.length));
+        } else {
+            return isStatic ? '$' : String.fromCharCode(33 + getSecureRandom() * 93);
+        }
+    }
+}
+
 function initMatrixCanvases() {
     const leftCanvas = document.getElementById('canvas-left-matrix');
     const rightCanvas = document.getElementById('canvas-right-matrix');
@@ -162,37 +182,12 @@ function setupMatrixStream(canvas, isLeft) {
         ctx.font = `${fontSize}px 'Fira Code', monospace`;
 
         for (let i = 0; i < drops.length; i++) {
-            // Determine active character pool based on checkboxes and morphing state
-            let char = '';
-            
-            // Randomly morph between code snippets and global characters
-            if (getSecureRandom() < 0.25) {
-                // Snippet morph
-                const snippet = codeSnippets[Math.floor(getSecureRandom() * codeSnippets.length)];
-                char = snippet.charAt(Math.floor(getSecureRandom() * snippet.length));
-            } else {
-                // Get active character sets
-                let activePools = [];
-                if (state.scripts.devanagari) activePools.push(charSets.devanagari);
-                if (state.scripts.bengali) activePools.push(charSets.bengali);
-                if (state.scripts.arabic) activePools.push(charSets.arabic);
-                if (state.scripts.spanish) activePools.push(charSets.spanish);
-                
-                if (activePools.length > 0) {
-                    const selectedPool = activePools[Math.floor(getSecureRandom() * activePools.length)];
-                    char = selectedPool.charAt(Math.floor(getSecureRandom() * selectedPool.length));
-                } else {
-                    char = String.fromCharCode(33 + getSecureRandom() * 93);
-                }
-            }
-
+            const char = getRandomChar(state, false);
             const x = i * fontSize;
             const y = drops[i] * fontSize;
 
-            // Draw character
             ctx.fillText(char, x, y);
 
-            // Move stream down according to morph speed state
             if (y > canvas.height && getSecureRandom() > 0.975) {
                 drops[i] = 0;
             }
@@ -509,25 +504,7 @@ function drawStaticCodeMatrix(ctx, width, height) {
                     ctx.fillStyle = getSecureRandom() > 0.5 ? 'rgba(255, 215, 0, 0.18)' : hexToRgba(state.rightColor, 0.18);
                 }
                 
-                // Generate random glyph
-                let char = '';
-                if (getSecureRandom() < 0.2) {
-                    const snippet = codeSnippets[Math.floor(getSecureRandom() * codeSnippets.length)];
-                    char = snippet.charAt(Math.floor(getSecureRandom() * snippet.length));
-                } else {
-                    let pools = [];
-                    if (state.scripts.devanagari) pools.push(charSets.devanagari);
-                    if (state.scripts.bengali) pools.push(charSets.bengali);
-                    if (state.scripts.arabic) pools.push(charSets.arabic);
-                    if (state.scripts.spanish) pools.push(charSets.spanish);
-                    
-                    if (pools.length > 0) {
-                        const pool = pools[Math.floor(getSecureRandom() * pools.length)];
-                        char = pool.charAt(Math.floor(getSecureRandom() * pool.length));
-                    } else {
-                        char = '$';
-                    }
-                }
+                const char = getRandomChar(state, true);
                 ctx.fillText(char, x, y);
             }
         }
